@@ -1,7 +1,7 @@
 {
   "name": "toot",
   "metadata": {
-    "description": "Ocarina of Time sound effects for Claude Code."
+    "description": "🧚 Hey! Listen! Ocarina of Time sound effects for Claude Code."
   },
   "owner": {
     "name": "rgbkrk",
@@ -11,7 +11,7 @@
     {
       "name": "toot",
       "source": "./toot",
-      "description": "OOT sound board. Plays Navi's \"Listen!\" on permission prompts."
+      "description": "🧚 Hey! Listen! Ocarina of Time sound effects. Navi on permission prompts, menu blips on replies, bonks on errors."
     }
   ]
 }
