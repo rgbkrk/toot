@@ -38,7 +38,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "[ -f \"$HOME/.claude/toot.muted\" ] || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/menus/OOT_Dialogue_Next.wav\" >/dev/null 2>&1 &",
+            "command": "[ -f \"$HOME/.claude/toot.muted\" ] || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/menus/OOT_Dialogue_Done.wav\" >/dev/null 2>&1 &",
             "async": true
           }
         ]
