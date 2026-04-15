@@ -1,0 +1,14 @@
+{
+  "name": "toot",
+  "owner": {
+    "name": "rgbkrk",
+    "url": "https://github.com/rgbkrk"
+  },
+  "plugins": [
+    {
+      "name": "toot",
+      "source": "./",
+      "description": "OOT sound board. Plays Navi's \"Listen!\" on permission prompts."
+    }
+  ]
+}

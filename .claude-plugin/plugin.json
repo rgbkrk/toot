@@ -1,0 +1,9 @@
+{
+  "name": "toot",
+  "version": "0.1.0",
+  "description": "OOT sound board for Claude Code. Plays Navi's \"Listen!\" on permission prompts.",
+  "author": {
+    "name": "rgbkrk"
+  },
+  "homepage": "https://github.com/rgbkrk/toot"
+}
