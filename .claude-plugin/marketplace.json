@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "toot",
-      "source": "./",
+      "source": "./toot",
       "description": "OOT sound board. Plays Navi's \"Listen!\" on permission prompts."
     }
   ]
