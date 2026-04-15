@@ -1,57 +1,59 @@
 {
-  "PermissionRequest": [
-    {
-      "hooks": [
-        {
-          "type": "command",
-          "command": "[ -f \"$HOME/.claude/toot.muted\" ] || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/navi/OOT_Navi_Listen$((RANDOM % 5 + 1)).wav\" >/dev/null 2>&1 &",
-          "async": true
-        }
-      ]
-    }
-  ],
-  "Notification": [
-    {
-      "hooks": [
-        {
-          "type": "command",
-          "command": "[ -f \"$HOME/.claude/toot.muted\" ] || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/navi/OOT_Navi_Hey$((RANDOM % 5 + 1)).wav\" >/dev/null 2>&1 &",
-          "async": true
-        }
-      ]
-    }
-  ],
-  "SessionStart": [
-    {
-      "hooks": [
-        {
-          "type": "command",
-          "command": "[ -f \"$HOME/.claude/toot.muted\" ] || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/navi/OOT_Navi_Hello$((RANDOM % 5 + 1)).wav\" >/dev/null 2>&1 &",
-          "async": true
-        }
-      ]
-    }
-  ],
-  "Stop": [
-    {
-      "hooks": [
-        {
-          "type": "command",
-          "command": "[ -f \"$HOME/.claude/toot.muted\" ] || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/fanfare/OOT_Fanfare_SmallItem.wav\" >/dev/null 2>&1 &",
-          "async": true
-        }
-      ]
-    }
-  ],
-  "PostToolUseFailure": [
-    {
-      "hooks": [
-        {
-          "type": "command",
-          "command": "[ -f \"$HOME/.claude/toot.muted\" ] || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/navi/OOT_Navi_Bonk.wav\" >/dev/null 2>&1 &",
-          "async": true
-        }
-      ]
-    }
-  ]
+  "hooks": {
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$HOME/.claude/toot.muted\" ] || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/navi/OOT_Navi_Listen$((RANDOM % 5 + 1)).wav\" >/dev/null 2>&1 &",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$HOME/.claude/toot.muted\" ] || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/navi/OOT_Navi_Hey$((RANDOM % 5 + 1)).wav\" >/dev/null 2>&1 &",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$HOME/.claude/toot.muted\" ] || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/navi/OOT_Navi_Hello$((RANDOM % 5 + 1)).wav\" >/dev/null 2>&1 &",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$HOME/.claude/toot.muted\" ] || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/fanfare/OOT_Fanfare_SmallItem.wav\" >/dev/null 2>&1 &",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$HOME/.claude/toot.muted\" ] || afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/navi/OOT_Navi_Bonk.wav\" >/dev/null 2>&1 &",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
 }
