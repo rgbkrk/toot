@@ -11,7 +11,7 @@
     {
       "name": "toot",
       "source": "./toot",
-      "description": "🧚 Hey! Listen! Ocarina of Time sound effects. Navi on permission prompts, menu blips on replies, bonks on errors."
+      "description": "🧚 Hey! Listen! Ocarina of Time sound effects. Navi chirps on permission prompts, menu blips on replies, bonks on errors."
     }
   ]
 }
