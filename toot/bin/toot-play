@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Pick a random file matching $CLAUDE_PLUGIN_ROOT/sounds/<category>/<prefix>*.wav and play it.
+# Lives in a helper so slash commands don't embed $((RANDOM ...)) - the Claude Code
+# permission check rejects arithmetic expansion that references non-literal variables
+# in the !`...` prefix of slash commands.
+#
+# Usage: toot-play <category> <prefix>
+set -euo pipefail
+
+category="${1:-}"
+prefix="${2:-}"
+[ -n "$category" ] && [ -n "$prefix" ] || exit 0
+[ -n "${CLAUDE_PLUGIN_ROOT:-}" ] || exit 0
+
+dir="${CLAUDE_PLUGIN_ROOT}/sounds/${category}"
+shopt -s nullglob
+files=( "${dir}/${prefix}"*.wav )
+n=${#files[@]}
+(( n > 0 )) || exit 0
+
+exec afplay "${files[$(( RANDOM % n ))]}"
