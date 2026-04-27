@@ -26,7 +26,7 @@ Add the marketplace, then install the plugin:
 ## Commands
 
 - `/toot:mute` - silence everything
-- `/toot:unmute` - bring Navi back (plays a test chime)
+- `/toot:unmute` - bring Navi back
 - `/toot:status` - check whether sounds are on
 - `/toot:play` - play a random Navi line right now (ignores mute)
 
