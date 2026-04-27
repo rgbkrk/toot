@@ -1,6 +1,6 @@
 {
   "name": "toot",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "🧚 Hey! Listen! tOOT brings Ocarina of Time sounds to Claude Code — Navi chirps on permission prompts, menu blips on replies, bonks on errors.",
   "author": {
     "name": "rgbkrk"

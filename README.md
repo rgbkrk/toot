@@ -30,7 +30,7 @@ Add the marketplace, then install the plugin:
 - `/toot:status` - check whether sounds are on
 - `/toot:play` - play a random Navi line right now (ignores mute)
 
-Mute state lives at `~/.claude/toot.muted`. Delete it, touch it, whatever — toot just checks for the file.
+Mute state lives at `~/.toot.muted`. Delete it, touch it, whatever. toot just checks for the file.
 
 ## Conductor
 
